@@ -13,7 +13,7 @@ object TestMacro {
   type CT[T] = Context {
     type PrefixType = T
   }
-  def makeGreat[T: c.WeakTypeTag](c: Context)(got: c.Expr[T]): c.Expr[QueryField[T, AnyRef]] = {
+  def queryParam[T: c.WeakTypeTag](c: Context)(got: c.Expr[T]): c.Expr[QueryField[T, AnyRef]] = {
     import c.universe._
 
     val name = got match {

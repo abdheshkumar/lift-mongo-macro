@@ -1,1 +1,6 @@
-This file was created by IntelliJ IDEA 12.0.2 for binding GitHub repository
+This is a proof of concept for binding together Rogue and MongoDocument
+
+For now it requres to define something that has same names and types that of case class in Meta, but type macros should
+remove that hassle.
+
+You need to build fresh snapshot of Rogue locally.

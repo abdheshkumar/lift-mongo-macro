@@ -24,7 +24,7 @@ trait DocumentRogue extends LiftRogue {
 
   }
 
-  implicit def x2Field[T](got: T): QueryField[T, _] = macro TestMacro.makeGreat[T]
+  implicit def x2Field[T](got: T): QueryField[T, _] = macro TestMacro.queryParam[T]
 }
 
 object DocumentRogue extends DocumentRogue
